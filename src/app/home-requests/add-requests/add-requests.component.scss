@@ -1,0 +1,106 @@
+.modal-body {
+  font-style: Poppins;
+  top: 162px;
+  left: 374px;
+  width: 532px;
+  height: 476px;
+  opacity: 1;
+}
+
+mat-form-field {
+  width: 90%;
+}
+
+.id-name {
+  width: 35%;
+  margin-right: 5px;
+}
+
+.id-number {
+  width: 55%;
+  margin-left: 5px;
+}
+
+.phone-name {
+  width: 45px;
+  margin-right: 5px;
+}
+
+.country-code {
+  width: 25%;
+  margin-left: 1px;
+}
+
+.phone-number {
+  width: 65%;
+  margin-left: 5px;
+}
+
+.btn-sec {
+  margin-right: 5rem !important;
+  text-align: right;
+  margin-top: 1.5em;
+}
+
+.Update-btn {
+  width: 104px;
+  height: 40px;
+  border: 1px solid var(--primary-600);
+  border: 1px solid #155EEF;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.Discard-btn {
+  width: 104px;
+  height: 40px;
+  color: white;
+  background: var(--primary-600) 0% 0% no-repeat padding-box;
+  background: #155EEF 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.text-inside {
+  position: absolute;
+  left: 5px;
+  width: 100%;
+  border: 1px solid #fee0ac;
+  background-color: #fff8e9;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn-sec {
+    margin-right: 1rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn-sec {
+    margin-right: 1rem !important;
+  }
+
+}
+
+.modal-title {
+  top: 186px;
+  left: 398px;
+  font-size: 20px;
+  color: var(--neutral-900);
+  text-align: left;
+  font: normal normal medium 20px/38px Poppins;
+  letter-spacing: 0px;
+  color: #121926;
+  opacity: 1;
+}

@@ -1,3 +1,39 @@
-.home-container{
-    padding: 10%;
+.home-requests-content{
+    padding-top: 10rem;
+    margin-left: auto;
+    width: max-content;
+    margin-right: auto;
+
+    .requests-name{
+        top: 79px;
+        left: 215px;
+        width: 201px;
+        height: 28px;
+        color: var(--neutral-900);
+        text-align: left;
+        font: normal normal medium 20px/38px Poppins;
+        letter-spacing: 0px;
+        color: #121926;
+        opacity: 1;
+        display: inline;
+    }
+    .requests-buttons {
+        float: right;
+
+    }
+    .requests-types{
+        top: 113px;
+        left: 215px;
+        width: 308px;
+        height: 60px;
+        color: var(--neutral-600);
+        text-align: left;
+        font: normal normal normal 14px/38px Inter;
+        letter-spacing: 0px;
+        color: #4B5565;
+        opacity: 1;
+    }
+    .mat-mdc-unelevated-button:not(:disabled){
+        background-color:#155EEF;
+    }
 }

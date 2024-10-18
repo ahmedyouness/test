@@ -1,16 +1,22 @@
-
+@for(request of requestService.requestList; track request){
 <div class="list-container">
-          <button mat-flat-button>Basic</button>
+  <div class="request-title">{{request.project}}</div>
+  <div class="request-details">{{request.user}}</div>
+  <div class="client-details">
+    {{request.contract}}
+    <div class="name">
+    </div>
+    <div class="contract-name">
 
-<div class="request-title"></div>
-<div class="request-details"></div>
-<div class="client-details">
-<div class="name">
-</div>
-<div class="contract-name">
+    </div>
+  </div>
 
 </div>
-</div>
+}
+@empty {
+<div>
+
+  no data
 
 </div>
-
+}

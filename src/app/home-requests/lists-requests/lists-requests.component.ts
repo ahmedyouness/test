@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { RequestsService } from '../services/data.service';
 
 @Component({
   selector: 'app-lists-requests',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './lists-requests.component.scss'
 })
 export class ListsRequestsComponent {
+  requestService = inject(RequestsService);
 
 }

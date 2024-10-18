@@ -1,4 +1,10 @@
-<div class="home-container">
+<div class="home-requests-content">
+    <div class="requests-name">Liste des demandes</div>
+    <button class="requests-buttons" mat-flat-button (click)="addNewRequest()">
+        <mat-icon color="white">add</mat-icon>
+        Ajouter
+    </button>
+    <div class="requests-types">Gérer les demandes d'autorisation de travaux.</div>
     <app-lists-requests></app-lists-requests>
 
 </div>
