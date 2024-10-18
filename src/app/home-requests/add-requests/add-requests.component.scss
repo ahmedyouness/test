@@ -5,10 +5,32 @@
   width: 532px;
   height: 476px;
   opacity: 1;
+
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.is-invalid{
+color: aqua;
+}
+.textFieldStyle {
+  top: 270px;
+  left: 398px;
+  width: 484px;
+  height: 56px;
+  border: 1px solid var(--neutral-200);
+  border: 1px solid #E3E8EF;
+  border-radius: 10px;
+  opacity: 1;
 }
 
 mat-form-field {
-  width: 90%;
+  width: 100%;
+  padding-bottom: 2rem;
+
+
 }
 
 .id-name {
@@ -42,16 +64,18 @@ mat-form-field {
   margin-top: 1.5em;
 }
 
-.Update-btn {
+.cancel-btn {
   width: 104px;
   height: 40px;
   border: 1px solid var(--primary-600);
   border: 1px solid #155EEF;
+  color: #155EEF;
+  background: white;
   border-radius: 10px;
   opacity: 1;
 }
 
-.Discard-btn {
+.add-btn {
   width: 104px;
   height: 40px;
   color: white;
@@ -59,11 +83,10 @@ mat-form-field {
   background: #155EEF 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
+  float: right;
 }
 
-mat-form-field {
-  width: 100%;
-}
+
 
 .text-inside {
   position: absolute;
@@ -94,6 +117,9 @@ mat-form-field {
 }
 
 .modal-title {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
   top: 186px;
   left: 398px;
   font-size: 20px;

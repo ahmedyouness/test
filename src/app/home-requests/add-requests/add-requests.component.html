@@ -1,51 +1,32 @@
 <div class="modal-body">
   <div class="modal-title">Ajouter une demande d'autorisation</div>
-  <div>
-    
     <div class="container">
-      <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="forms">
           <form action="" [formGroup]="requestsService.requestForm">
-            <div class="form-group">
-              <label for="">project:</label>
-              <input type="text" [ngClass]="{'is-invalid':f['project'].invalid && f['project'].touched}"
-                class="form-control" formControlName="project" placeholder="project">
-              @if( f['project'].invalid && f['project'].touched){
-              <small>project is mandatory ..</small>
-              }
-            </div>
 
-            <div class="form-group">
-              <label for="">User:</label>
-              <input type="text" [ngClass]="{'is-invalid':f['user'].invalid && f['user'].touched}"
-                class="form-control" formControlName="user" placeholder="user">
-              @if( f['user'].invalid && f['user'].touched){
-              <small>user is mandatory ..</small>
-              }
-            </div>
+            <mat-form-field class="text-field-style" appearance="outline">
+              <input type="text" matInput [ngClass]="{'is-invalid':f['project'].invalid && f['project'].touched}"
+                class="form-control" formControlName="project" placeholder="Projet de travaux *">
+            </mat-form-field>
 
-            <div class="form-group">
-              <label for="">contract:</label>
-              <input type="text" [ngClass]="{'is-invalid':f['contract'].invalid && f['contract'].touched}"
-                class="form-control" formControlName="contract" placeholder="contract">
-              @if( f['contract'].invalid && f['contract'].touched){
-              <small>contract is mandatory ..</small>
-              }
-            </div>
+            <mat-form-field class="text-field-style" appearance="outline">
+              <input type="text" matInput [ngClass]="{'is-invalid':f['user'].invalid && f['user'].touched}"
+                class="form-control" formControlName="user" placeholder="Utilisateur *">
+            </mat-form-field>
+
+            <mat-form-field class="text-field-style" appearance="outline">
+              <input type="text" matInput class="form-control" formControlName="contract" placeholder="Contrat">
+            </mat-form-field>
 
             <div class="">
-              <button type="submit" (click)="addRequest()" *ngIf="requestsService.requestForm.value['id'] == 0"
-                class="btn btn-sm  form-control mt-3">Submit</button>
+              <button type="submit" (click)="discardRequest()" class="cancel-btn">Annuler</button>
+              <button type="submit" (click)="addRequest()" [disabled]="requestsService.requestForm.invalid"
+                *ngIf="requestsService.requestForm.value['id'] == 0" class="add-btn">Créer</button>
+
             </div>
 
           </form>
-        </div>
       </div>
     </div>
-
-  </div>
-
-
-
 
 </div>

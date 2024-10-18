@@ -50,4 +50,7 @@ export class AddRequestsComponent {
       this.requestsService.formReset();
       this.dialogRef.close(loacalArray);
     }
+    discardRequest(){
+      this.dialogRef.close()
+    }
 }

@@ -1,22 +1,21 @@
 @for(request of requestService.requestList; track request){
 <div class="list-container">
+  <div class="request-authorisation">Demande d'autorisation de travaux</div>
   <div class="request-title">{{request.project}}</div>
-  <div class="request-details">{{request.user}}</div>
   <div class="client-details">
-    {{request.contract}}
     <div class="name">
+      {{request.user}}
     </div>
     <div class="contract-name">
-
+      {{request.contract}}
     </div>
   </div>
 
 </div>
 }
 @empty {
-<div>
-
+<div class="list-container">
+  <div class="request-authorisation">Demande d'autorisation de travaux</div>
   no data
-
 </div>
 }
