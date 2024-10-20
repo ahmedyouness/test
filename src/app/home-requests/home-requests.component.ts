@@ -1,8 +1,9 @@
 import { Component, inject, OnDestroy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddRequestsComponent } from './add-requests/add-requests.component';
-import { RequestsService } from './services/data.service';
+import { RequestsService } from './services/data-requests.service';
 import { Subject } from 'rxjs';
+import { IRequestModel } from './models/request.model';
 
 @Component({
   selector: 'app-home-requests',
@@ -11,7 +12,7 @@ import { Subject } from 'rxjs';
 })
 export class HomeRequestsComponent {
 
-  data: any
+  data: IRequestModel;
   requestService = inject(RequestsService);
   private isDestroyed$ = new Subject<void>();
   constructor(public dialog: MatDialog) {
@@ -32,10 +33,8 @@ export class HomeRequestsComponent {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed', result, this.data);
       if (result) {
         this.data = result
-        console.log('dada', result, this.data)
         this.getRequest()
 
       }

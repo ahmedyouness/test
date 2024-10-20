@@ -1,9 +1,13 @@
 .home-requests-content{
     padding-top: 10rem;
     margin-left: auto;
-    width: max-content;
+    width: 60%;
     margin-right: auto;
 
+    @media (max-width: 800px) {
+        width: auto;
+
+      }
     .requests-name{
         top: 79px;
         left: 215px;

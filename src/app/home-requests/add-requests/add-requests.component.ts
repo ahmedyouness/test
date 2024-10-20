@@ -1,6 +1,7 @@
 import { Component, inject, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { RequestsService } from '../services/data.service'
+import { RequestsService } from '../services/data-requests.service'
+import { IRequestModel } from '../models/request.model';
 
 @Component({
   selector: 'app-add-requests',
@@ -11,14 +12,8 @@ export class AddRequestsComponent {
   
   requestsService = inject(RequestsService);
 
-  requestList: any[] =[]
+  requestList: IRequestModel
   
-    departments:any[] = [
-      'Angular Developer',
-      'System Engineer',
-      'Charted Accountant',
-      'Tutor'
-    ]
   
     get f(){
     return  this.requestsService.requestForm.controls
@@ -33,7 +28,6 @@ export class AddRequestsComponent {
 
     addRequest(){
       const loacalArray = localStorage.getItem('angular18local');
-      console.log(loacalArray,'data')
       if(loacalArray == null){
         const newArray = [];
         this.requestsService.requestForm.value['id']= 1;

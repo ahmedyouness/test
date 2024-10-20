@@ -1,12 +1,110 @@
-.list-container{
+.list-container {
         top: 169px;
         left: 210px;
-        width: 861px;
+        width: -webkit-fill-available;
         height: 130px;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 8px 16px #4B556505;
         border-radius: 10px;
         opacity: 1;
         margin-bottom: 2rem;
+
+        .request-details {
+                display: inline-flex;
+                width: inherit;
+                padding-top: 1rem;
+
+                .request-trace-img {
+                        background: transparent url('/assets/images/ellipse.png') 0% 0% no-repeat padding-box;
+                        opacity: 1;
+                        width: 17px;
+                        height: 20px;
+                        margin: 1rem;
+
+                }
+
+                .request-name {
+                        width: inherit;
+
+                        .request-authorisation-project {
+                                color: var(--neutral-600);
+                                text-align: left;
+                                font: normal normal normal 14px/20px Inter;
+                                letter-spacing: 0px;
+                                color: #4B5565;
+                                opacity: 1;
+                        }
+
+                        .request-project-title {
+                                color: var(--neutral-900);
+                                text-align: left;
+                                font: normal normal medium 16px/24px Poppins;
+                                letter-spacing: 0px;
+                                color: #121926;
+                                opacity: 1;
+                        }
+                }
+
+                .status {
+                        top: 189px;
+                        left: 917px;
+                        width: 80px;
+                        height: 28px;
+                        background: #FEF0C7 0% 0% no-repeat padding-box;
+                        border-radius: 14px;
+                        opacity: 1;
+                        color: #DC6803;
+                        text-align: center;
+                        margin-top: 0.7rem;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.3rem;
+                }
+
+                .request-points-img {
+                        padding: 1.3rem 1rem 0rem 1rem;
+                        width: 3px;
+                        height: 21px;
+                }
+
+
+        }
+
+        .client-details {
+                display: inline-flex;
+                margin-left: 3rem;
+                font: normal normal normal 14px/20px Inter;
+                .name {
+                        text-align: center;        
+                        width: auto;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        padding-top: 0.3rem;
+                        margin-right: 1rem;
+                        top: 247px;
+                        left: 286px;
+                        height: 24px;
+                        background: var(--neutral-700) 0% 0% no-repeat padding-box;
+                        background: #364152 0% 0% no-repeat padding-box;
+                        border-radius: 6px;
+                        opacity: 1;
+                        color: white;
+
+                }
+
+                .contract-number {
+                        text-align: center;        
+                        width: auto;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        padding-top: 0.3rem;
+                        top: 247px;
+                        left: 381px;
+                        height: 24px;
+                        background: var(--neutral-100) 0% 0% no-repeat padding-box;
+                        background: #EEF2F6 0% 0% no-repeat padding-box;
+                        border-radius: 6px;
+                        opacity: 1;
+                }
+        }
 
 }

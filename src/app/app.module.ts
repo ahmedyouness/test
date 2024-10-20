@@ -13,7 +13,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
-import { RequestsService } from './home-requests/services/data.service';
+import { RequestsService } from './home-requests/services/data-requests.service';
 import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({

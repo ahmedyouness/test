@@ -1,13 +1,24 @@
 @for(request of requestService.requestList; track request){
 <div class="list-container">
-  <div class="request-authorisation">Demande d'autorisation de travaux</div>
-  <div class="request-title">{{request.project}}</div>
+
+  <div class="request-details">
+    <img class="request-trace-img" src="assets/images/trace.png" alt="trace" />
+
+    <div class="request-name">
+      <div class="request-authorisation-project">Demande d'autorisation de travaux</div>
+      <div class="request-project-title">{{request.project}}</div>
+    </div>
+
+    <div class="status">Statut</div>
+    <img class="request-points-img" src="assets/images/points.png" alt="points" />
+  </div>
+
   <div class="client-details">
     <div class="name">
       {{request.user}}
     </div>
-    <div class="contract-name">
-      {{request.contract}}
+    <div class="contract-number">
+     Contrat {{request.contract}}
     </div>
   </div>
 
